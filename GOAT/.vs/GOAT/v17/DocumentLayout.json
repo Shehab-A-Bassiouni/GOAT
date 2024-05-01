@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\wwwroot\\css\\sb-admin-2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\wwwroot\\css\\sb-admin-2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA3ADEA-70CE-48AA-B7B9-188B28147895}|BL\\BL.csproj|f:\\goat\\goat\\bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA3ADEA-70CE-48AA-B7B9-188B28147895}|BL\\BL.csproj|solutionrelative:bl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB9201A-7FBB-47EF-A757-558BE12C819F}|DAL\\DAL.csproj|f:\\goat\\goat\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB9201A-7FBB-47EF-A757-558BE12C819F}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sb-admin-2.css",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\sb-admin-2.css",
+              "RelativeDocumentMoniker": "GOAT\\wwwroot\\css\\sb-admin-2.css",
+              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\sb-admin-2.css",
+              "RelativeToolTip": "GOAT\\wwwroot\\css\\sb-admin-2.css",
+              "ViewState": "AQIAAJ0mAAAAAAAAAAAnwKUmAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-01T08:02:43.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GOAT\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GOAT\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAswCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T07:54:42.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\BL\\Class1.cs",
+              "RelativeDocumentMoniker": "BL\\Class1.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\BL\\Class1.cs",
+              "RelativeToolTip": "BL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:50:09.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "DAL\\Class1.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DAL\\Class1.cs",
+              "RelativeToolTip": "DAL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:49:52.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
