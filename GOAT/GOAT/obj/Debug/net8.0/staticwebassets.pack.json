@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\GOAT.bundle.scp.css"
     },
     {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\.browserslistrc",
+      "PackagePath": "staticwebassets\\.browserslistrc"
+    },
+    {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\.travis.yml",
+      "PackagePath": "staticwebassets\\.travis.yml"
+    },
+    {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
     },
@@ -13,12 +21,12 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\gulpfile.js",
+      "PackagePath": "staticwebassets\\gulpfile.js"
     },
     {
-      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\GoatLogo.jpg",
-      "PackagePath": "staticwebassets\\img\\GoatLogo.jpg"
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\undraw_posting_photo.svg",
@@ -71,6 +79,14 @@
     {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\package-lock.json",
+      "PackagePath": "staticwebassets\\package-lock.json"
+    },
+    {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\package.json",
+      "PackagePath": "staticwebassets\\package.json"
     },
     {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\scss\\_buttons.scss",

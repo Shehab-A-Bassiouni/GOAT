@@ -1,0 +1,12 @@
+F:\GOAT\GOAT\DAL\bin\Debug\net8.0\DAL.deps.json
+F:\GOAT\GOAT\DAL\bin\Debug\net8.0\DAL.dll
+F:\GOAT\GOAT\DAL\bin\Debug\net8.0\DAL.pdb
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.dll
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\refint\DAL.dll
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\DAL.pdb
+F:\GOAT\GOAT\DAL\obj\Debug\net8.0\ref\DAL.dll
