@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f6RKQrR/59dkEV+fUIOsv8hSmkP83hWTjI4nrjGzn6w=",
+  "Hash": "ApXVY0UdetuK1kqNdjvDvLhMxjqVD7SawBdMe/+llxw=",
   "Source": "GOAT",
   "BasePath": "_content/GOAT",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\gulpfile.js"
+    },
+    {
+      "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\dummyProductImg.jpg",
+      "SourceId": "GOAT",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\",
+      "BasePath": "_content/GOAT",
+      "RelativePath": "img/dummyProductImg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\dummyProductImg.jpg"
     },
     {
       "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\ForgetPasswordImg.jpg",

@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\img\\RegisterImg.jpg"
     },
     {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\dummyProductImg.jpg",
+      "PackagePath": "staticwebassets\\img\\dummyProductImg.jpg"
+    },
+    {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

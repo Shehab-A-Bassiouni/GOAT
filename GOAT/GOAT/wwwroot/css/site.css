@@ -2,3 +2,12 @@
 .custome-primary-txt {
     color: #745e35 !important;
 }
+
+.product-image {
+    width:100px !important;
+    height:auto;
+}
+
+.custom-table-data {
+    font-size:20px;
+}

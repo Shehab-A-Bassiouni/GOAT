@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\wwwroot\\vendor\\fontawesome-free\\css\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\wwwroot\\vendor\\fontawesome-free\\css\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\wwwroot\\vendor\\fontawesome-free\\license.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\wwwroot\\vendor\\fontawesome-free\\license.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "all.css",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\css\\all.css",
-              "RelativeDocumentMoniker": "GOAT\\wwwroot\\vendor\\fontawesome-free\\css\\all.css",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\css\\all.css",
-              "RelativeToolTip": "GOAT\\wwwroot\\vendor\\fontawesome-free\\css\\all.css",
-              "ViewState": "AQIAAE0DAAAAAAAAAAAawGIDAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-02T08:26:15.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LICENSE.txt",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",
-              "RelativeDocumentMoniker": "GOAT\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",
-              "RelativeToolTip": "GOAT\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-02T08:13:36.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GOAT\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GOAT\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAJ8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T08:09:06.012Z",
-              "EditorCaption": ""
             }
           ]
         }

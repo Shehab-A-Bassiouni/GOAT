@@ -17,8 +17,8 @@
           rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="~/css/sb-admin-2.css" rel="stylesheet">
     <link href="~/css/site.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
     <link rel="icon" href="~/img/logo.png"/>
     
 
@@ -68,9 +68,10 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Products Management</h6>
-                        <a class="collapse-item" href="buttons.html">Display Products</a>
-                        <a class="collapse-item" href="cards.html">Add Product</a>
-                        <a class="collapse-item" href="cards.html">Delete Product</a>
+                        <a class="collapse-item" asp-controller="Products" asp-action="Display">Display Products</a>
+                        <a class="collapse-item" asp-controller="Products" asp-action="Add"  >Add Product</a>
+                        <a class="collapse-item" asp-controller="Products" asp-action="Edit"  >Edit Product</a>
+                        <a class="collapse-item" asp-controller="Products" asp-action="Delete" >Delete Product</a>
 
                     </div>
                 </div>
