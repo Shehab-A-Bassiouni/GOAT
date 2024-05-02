@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/GOAT/GOAT/GOAT/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/GOAT/GOAT/GOAT/Views/Products/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
