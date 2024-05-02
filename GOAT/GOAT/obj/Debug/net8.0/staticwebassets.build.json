@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G0Stwd4f5VcwphqjkJ1jrVSItLcWvYVreV2wtMySO38=",
+  "Hash": "ILRQhrII/TsTc/yMT7V3YNlBAe3saOVCmohCOjkfWFs=",
   "Source": "GOAT",
   "BasePath": "_content/GOAT",
   "Mode": "Default",
@@ -3948,6 +3948,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\vendor\\fontawesome-free\\package.json"
+    },
+    {
+      "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\package-lock.json",
+      "SourceId": "GOAT",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\",
+      "BasePath": "_content/GOAT",
+      "RelativePath": "vendor/fontawesome-free/package-lock.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vendor\\fontawesome-free\\package-lock.json"
     },
     {
       "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\scss\\_animated.scss",

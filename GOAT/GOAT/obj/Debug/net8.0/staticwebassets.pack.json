@@ -821,6 +821,10 @@
       "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\metadata\\sponsors.yml"
     },
     {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\package-lock.json",
+      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\package-lock.json"
+    },
+    {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\vendor\\fontawesome-free\\package.json",
       "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\package.json"
     },
