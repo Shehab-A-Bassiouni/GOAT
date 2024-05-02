@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\gulpfile.js"
     },
     {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\LoginImg.jpg",
+      "PackagePath": "staticwebassets\\img\\LoginImg.jpg"
+    },
+    {
+      "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\RegisterImg.jpg",
+      "PackagePath": "staticwebassets\\img\\RegisterImg.jpg"
+    },
+    {
       "Id": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

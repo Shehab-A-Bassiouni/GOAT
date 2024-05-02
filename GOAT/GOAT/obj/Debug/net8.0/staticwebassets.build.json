@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ILRQhrII/TsTc/yMT7V3YNlBAe3saOVCmohCOjkfWFs=",
+  "Hash": "uiadrjmflyyPVRUl1Xotafol3j/+MFyrBYIwiechVtk=",
   "Source": "GOAT",
   "BasePath": "_content/GOAT",
   "Mode": "Default",
@@ -150,6 +150,25 @@
       "OriginalItemSpec": "wwwroot\\gulpfile.js"
     },
     {
+      "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\LoginImg.jpg",
+      "SourceId": "GOAT",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\",
+      "BasePath": "_content/GOAT",
+      "RelativePath": "img/LoginImg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\LoginImg.jpg"
+    },
+    {
       "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\logo.png",
       "SourceId": "GOAT",
       "SourceType": "Discovered",
@@ -167,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
+      "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\RegisterImg.jpg",
+      "SourceId": "GOAT",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\",
+      "BasePath": "_content/GOAT",
+      "RelativePath": "img/RegisterImg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\RegisterImg.jpg"
     },
     {
       "Identity": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\img\\undraw_posting_photo.svg",
