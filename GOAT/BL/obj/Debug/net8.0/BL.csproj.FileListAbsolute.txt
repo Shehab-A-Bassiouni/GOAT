@@ -15,3 +15,5 @@ F:\GOAT\GOAT\BL\bin\Debug\net8.0\DAL.pdb
 F:\GOAT\GOAT\BL\bin\Debug\net8.0\DAL.dll.config
 F:\GOAT\GOAT\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
 F:\GOAT\GOAT\BL\obj\Debug\net8.0\BL.csproj.Up2Date
+F:\GOAT\GOAT\BL\bin\Debug\net8.0\BL.runtimeconfig.json
+F:\GOAT\GOAT\BL\obj\Debug\net8.0\BL.genruntimeconfig.cache
