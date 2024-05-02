@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DALContext :DbContext
     {
-        public DALContext(DbContextOptions<DALContext> options) :base(options){
+        public DALContext() :base(){
            
         }
 

@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|F:\\GOAT\\GOAT\\goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|F:\\GOAT\\GOAT\\goat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7298591F-4242-4B75-9B81-88FC0700F01E}|GOAT\\GOAT.csproj|solutionrelative:goat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAE58EE4-0660-43B5-9BF2-1AED6732BAE5}|BLTests\\BLTests.csproj|F:\\GOAT\\GOAT\\bltests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAE58EE4-0660-43B5-9BF2-1AED6732BAE5}|BLTests\\BLTests.csproj|solutionrelative:bltests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,61 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "GOAT\\Views\\Home\\Index.cshtml",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "GOAT\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T06:04:43.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "GOAT\\wwwroot\\css\\site.css",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "GOAT\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-02T06:03:57.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GOAT\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GOAT\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T06:00:44.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "F:\\GOAT\\GOAT\\BLTests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "BLTests\\UnitTest1.cs",
-              "ToolTip": "F:\\GOAT\\GOAT\\BLTests\\UnitTest1.cs",
-              "RelativeToolTip": "BLTests\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T04:56:49.205Z"
             }
           ]
         }
