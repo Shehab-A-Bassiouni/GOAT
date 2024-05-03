@@ -5,25 +5,29 @@
 }
 <div class="container">
 
-    <form>
+    <form asp-action="Add" asp-controller="Products" method="post">
         <div class="form-group">
-            <label for="exampleInputEmail1">Product Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label>Product Name</label>
+            <input type="text" class="form-control" name="Name">
+        </div>
+        <div class="form-group">
+            <label>Serial</label>
+            <input type="text" class="form-control" name="Serial">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1">Price</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label >Price</label>
+            <input type="text" class="form-control" name="Price">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputEmail1">Stock</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label>Stock</label>
+            <input type="number" class="form-control" name="Stock">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputEmail1">Describtion</label>
-            <textarea  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+            <label >Description</label>
+            <textarea class="form-control" name="Description"></textarea>
         </div>
 
         <label for="inputGroupFile01">Image</label>
@@ -32,7 +36,7 @@
                 <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
             </div>
             <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
         </div>

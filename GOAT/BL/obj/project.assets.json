@@ -5062,7 +5062,8 @@
       "DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
-      "Microsoft.Extensions.Hosting >= 8.0.0"
+      "Microsoft.Extensions.Hosting >= 8.0.0",
+      "System.Configuration.ConfigurationManager >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -5130,6 +5131,10 @@
             "version": "[8.0.4, )"
           },
           "Microsoft.Extensions.Hosting": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[8.0.0, )"
           }

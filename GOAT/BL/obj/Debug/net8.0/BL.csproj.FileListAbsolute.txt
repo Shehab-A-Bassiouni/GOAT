@@ -17,3 +17,4 @@ F:\GOAT\GOAT\BL\obj\Debug\net8.0\refint\BL.dll
 F:\GOAT\GOAT\BL\obj\Debug\net8.0\BL.pdb
 F:\GOAT\GOAT\BL\obj\Debug\net8.0\BL.genruntimeconfig.cache
 F:\GOAT\GOAT\BL\obj\Debug\net8.0\ref\BL.dll
+F:\GOAT\GOAT\BL\bin\Debug\net8.0\BL.dll.config

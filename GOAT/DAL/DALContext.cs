@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 using System.Configuration;
 using Microsoft.IdentityModel.Protocols;
 using DAL.Models;
+
 namespace DAL
 {
     public class DALContext :DbContext
     {
         public DbSet<Product> Products { get; set; }
-        public DALContext() :base(){
+
+        public DALContext() { } 
+        public DALContext(DbContextOptions<DALContext> options) :base(options)
+        {
            
         }
 
