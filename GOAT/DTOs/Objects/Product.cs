@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTOs
+namespace DTOs.Objects
 {
-    public class Product :BaseEntity
+    public class Product : BaseEntity
     {
-     
         public required string Name { get; set; }
         public string? Description { get; set; }
 

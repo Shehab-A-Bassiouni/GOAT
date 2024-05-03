@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
+      "projectUniqueName": "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
       "projectName": "DTOs",
-      "projectPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
+      "projectPath": "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
       "packagesPath": "C:\\Users\\swesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\obj\\",
+      "outputPath": "F:\\GOAT\\GOAT\\DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"

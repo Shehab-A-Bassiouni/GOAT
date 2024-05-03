@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|c:\\users\\swesh\\onedrive\\desktop\\project\\goat\\goat\\dtos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|c:\\users\\swesh\\onedrive\\desktop\\project\\goat\\goat\\dtos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49091584-492F-4442-A249-B138415AB235}|BLL\\BLL.csproj|c:\\users\\swesh\\onedrive\\desktop\\project\\goat\\goat\\bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49091584-492F-4442-A249-B138415AB235}|BLL\\BLL.csproj|solutionrelative:bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,48 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\Product.cs",
-              "RelativeDocumentMoniker": "DTOs\\Product.cs",
-              "ToolTip": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\Product.cs",
-              "RelativeToolTip": "DTOs\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:06:38.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "DTOs\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\BaseEntity.cs",
-              "RelativeToolTip": "DTOs\\BaseEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:06:36.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\BLL\\Class1.cs",
-              "RelativeDocumentMoniker": "BLL\\Class1.cs",
-              "ToolTip": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\BLL\\Class1.cs",
-              "RelativeToolTip": "BLL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T13:57:33.998Z",
-              "EditorCaption": ""
-            }
-          ]
+          "SelectedChildIndex": -1,
+          "Children": []
         }
       ]
     }

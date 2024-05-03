@@ -7,35 +7,38 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
-    public class Repository : IRepository<BaseEntity>
+    public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly GoatContext goatContext = new();
-        public void Add(BaseEntity entity)
+        public void Add(T entity)
         {
-            goatContext.Add<BaseEntity>(entity);
+            goatContext.Add(entity);
         }
 
-        public void Delete(BaseEntity entity)
+        public void Delete(T entity)
         {
-            var data = goatContext.Find<BaseEntity>(entity);
-            if(data is not null) data.IsExist = false;
+            throw new NotImplementedException();
+
         }
 
-        public BaseEntity Get(BaseEntity entity)
+        public BaseEntity Get(T entity)
         {
-            var data = goatContext.Find<BaseEntity>(entity);
-            if (data is not null) return data;
-            return new BaseEntity();
+            throw new NotImplementedException();
+
         }
 
-        public List<BaseEntity> GetAll(Type entityType)
+        public List<BaseEntity> GetAll()
         {
-            return goatContext.Set<BaseEntity>().ToList();
+            throw new NotImplementedException();
         }
 
-        public void Update(BaseEntity entity)
+        public void Update(T entity)
         {
-            goatContext.Update<BaseEntity>(entity);
+            throw new NotImplementedException();
+        }
+
+        public void Save() {
+            goatContext.SaveChanges();
         }
     }
 }

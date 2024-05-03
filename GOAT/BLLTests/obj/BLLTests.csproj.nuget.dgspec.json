@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj": {}
+    "F:\\GOAT\\GOAT\\BLLTests\\BLLTests.csproj": {}
   },
   "projects": {
-    "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj": {
+    "F:\\GOAT\\GOAT\\BLLTests\\BLLTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
-        "projectName": "DTOs",
-        "projectPath": "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "F:\\GOAT\\GOAT\\BLLTests\\BLLTests.csproj",
+        "projectName": "BLLTests",
+        "projectPath": "F:\\GOAT\\GOAT\\BLLTests\\BLLTests.csproj",
         "packagesPath": "C:\\Users\\swesh\\.nuget\\packages\\",
-        "outputPath": "F:\\GOAT\\GOAT\\DTOs\\obj\\",
+        "outputPath": "F:\\GOAT\\GOAT\\BLLTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
@@ -49,6 +49,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

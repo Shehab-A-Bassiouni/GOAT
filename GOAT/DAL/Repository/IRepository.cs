@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
-    public interface IRepository<BaseEntity>
+    public interface IRepository<T> where T: BaseEntity
     {
-        public void Add(BaseEntity entity);
-        public void Update(BaseEntity entity);
-        public void Delete(BaseEntity entity);
-        public BaseEntity Get(BaseEntity entity);
-        public List<BaseEntity> GetAll(Type entityType);
+        public void Add(T entity);
+        public void Update(T entity);
+        public void Delete(T entity);
+        public BaseEntity Get(T entity);
+        public List<BaseEntity> GetAll();
     }
 }

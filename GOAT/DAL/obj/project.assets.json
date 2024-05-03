@@ -4430,11 +4430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DAL\\DAL.csproj",
+      "projectUniqueName": "F:\\GOAT\\GOAT\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DAL\\DAL.csproj",
+      "projectPath": "F:\\GOAT\\GOAT\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\swesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DAL\\obj\\",
+      "outputPath": "F:\\GOAT\\GOAT\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
@@ -4456,8 +4456,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\swesh\\OneDrive\\Desktop\\Project\\GOAT\\GOAT\\DTOs\\DTOs.csproj"
+            "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj": {
+              "projectPath": "F:\\GOAT\\GOAT\\DTOs\\DTOs.csproj"
             }
           }
         }
