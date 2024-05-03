@@ -21,15 +21,17 @@ namespace DAL.Repository
 
         }
 
-        public BaseEntity Get(T entity)
+        public T Get(T entity)
         {
             throw new NotImplementedException();
 
         }
 
-        public List<BaseEntity> GetAll()
+        public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            var data = goatContext.Set<T>();
+            if(data is not null) return data.ToList();
+            return new List<T>();
         }
 
         public void Update(T entity)

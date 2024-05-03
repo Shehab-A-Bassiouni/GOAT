@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\GOAT\\GOAT\\DAL\\Migrations\\20240503153113_addProductDS1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DAL\\Migrations\\20240503153113_addProductDS1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61C30CDD-2926-4D5A-ABB3-59DD504C31B4}|DAL\\DAL.csproj|f:\\goat\\goat\\dal\\goatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61C30CDD-2926-4D5A-ABB3-59DD504C31B4}|DAL\\DAL.csproj|solutionrelative:dal\\goatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240503153113_addProductDS1.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DAL\\Migrations\\20240503153113_addProductDS1.cs",
+              "RelativeDocumentMoniker": "DAL\\Migrations\\20240503153113_addProductDS1.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DAL\\Migrations\\20240503153113_addProductDS1.cs",
+              "RelativeToolTip": "DAL\\Migrations\\20240503153113_addProductDS1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:31:13.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GoatContext.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DAL\\GoatContext.cs",
+              "RelativeDocumentMoniker": "DAL\\GoatContext.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DAL\\GoatContext.cs",
+              "RelativeToolTip": "DAL\\GoatContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAjwB8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:27:06.612Z",
+              "EditorCaption": ""
+            }
+          ]
         }
       ]
     }

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GOAT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ed46388aa1c96e3c630504a28a349b5ec7e2565")]
 [assembly: System.Reflection.AssemblyProductAttribute("GOAT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GOAT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

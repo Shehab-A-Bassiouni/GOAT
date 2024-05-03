@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using DTOs;
+using DTOs.Objects;
 namespace DAL
 {
     public class GoatContext:DbContext
@@ -15,7 +15,9 @@ namespace DAL
 
         }
 
-        public GoatContext() { }
+        public GoatContext() {
+        
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,7 +29,7 @@ namespace DAL
                 optionsBuilder.UseSqlServer(configuration["ConnectionStrings:GoatDBConnection"]);
         }
 
-       public DbSet<Product> Products;
+       public DbSet<Product>? Products;
 
     }
 }

@@ -12,7 +12,15 @@ namespace BLL.Managers
     {
         public static void Add(string name, string? description, string imagePath, int stock, double price) {
             Product product = ProductMapper.MapToDTO(name, description, imagePath, stock, price);
-            IRepository<Product> repository = new Repository();
+            IRepository<Product> repository = new Repository<Product>();
+            repository.Add(product);
         }
+
+        public static List<Product> GetAll() {
+            IRepository<Product> repository = new Repository<Product>();
+           return repository.GetAll();
+        }
+
+        
     }
 }

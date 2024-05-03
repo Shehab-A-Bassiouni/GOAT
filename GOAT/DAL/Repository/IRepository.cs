@@ -12,7 +12,7 @@ namespace DAL.Repository
         public void Add(T entity);
         public void Update(T entity);
         public void Delete(T entity);
-        public BaseEntity Get(T entity);
-        public List<BaseEntity> GetAll();
+        public T Get(T entity);
+        public List<T> GetAll();
     }
 }
