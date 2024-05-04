@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\views\\products\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\products\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|solutionrelative:goat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|f:\\goat\\goat\\goat\\views\\products\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56DB0554-7AA6-4390-9673-21D4C122722D}|GOAT\\GOAT.csproj|solutionrelative:goat\\views\\products\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "GOAT\\wwwroot\\css\\site.css",
+              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "GOAT\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-04T05:36:54.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Products\\Display.cshtml",
+              "RelativeDocumentMoniker": "GOAT\\Views\\Products\\Display.cshtml",
+              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Products\\Display.cshtml",
+              "RelativeToolTip": "GOAT\\Views\\Products\\Display.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T05:36:41.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\GOAT\\Views\\Products\\Add.cshtml",
+              "RelativeDocumentMoniker": "GOAT\\Views\\Products\\Add.cshtml",
+              "ToolTip": "F:\\GOAT\\GOAT\\GOAT\\Views\\Products\\Add.cshtml",
+              "RelativeToolTip": "GOAT\\Views\\Products\\Add.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T05:12:48.489Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

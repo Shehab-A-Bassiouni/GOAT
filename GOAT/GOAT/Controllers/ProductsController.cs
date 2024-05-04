@@ -45,12 +45,18 @@ namespace GOAT.Controllers
             return NoContent();
         }
 
+        [HttpGet]
         public IActionResult Delete()
         {
             return View();
         }
 
         public IActionResult Edit()
+        {
+            return View();
+        }
+
+        public IActionResult Search(string input)
         {
             return View();
         }

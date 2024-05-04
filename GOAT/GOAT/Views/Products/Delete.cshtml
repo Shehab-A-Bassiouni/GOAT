@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="input-group mb-3 w-75 mx-auto">
+    <input type="text" class="form-control" placeholder="Product Name or Serial" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <input class="btn btn-primary" id="basic-addon2" value="Search" onclick="SearchProduct()"/>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="text-center mt-5">
+        <img src="~/img/dummyProductImg.jpg" class="col-2 rounded" />
+    </div>
+    <form class="">
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Product Serial</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Product Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Describtion</label>
+            <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Delete Product</button>
+    </form>
+
+</div>
+
+

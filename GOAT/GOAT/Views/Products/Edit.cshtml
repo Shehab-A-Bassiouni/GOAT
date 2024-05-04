@@ -1,12 +1,8 @@
-﻿@model List<DTOs.Objects.Product>
-
+﻿@Model List<DTOs.Objects.Product>
 @{
-    ViewData["Title"] = "Display";
+    ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
-
 
 <div class="px-5">
     <table class="table table-striped custom-table-data display" id="table">
@@ -15,9 +11,8 @@
                 <th scope="col" class="align-middle text-center">ID</th>
                 <th scope="col" class="align-middle text-center">Image</th>
                 <th scope="col" class="align-middle text-center">Name</th>
-                <th scope="col" class="align-middle text-center">Price</th>
-                <th scope="col" class="align-middle text-center">Stock</th>
                 <th scope="col" class="align-middle text-center">Description</th>
+                <th scope="col" class="align-middle text-center">Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +25,7 @@
                         <td class="align-middle text-center">@product.Name</td>
                         <td class="align-middle text-center">@product.Price</td>
                         <td class="align-middle text-center">@product.Stock</td>
-                        <td class="align-middle text-center">@product.Description</td>
+                        <td class="align-middle text-center"><a asp-action="EditByID" asp-controller="Products" asp-route-id="@product.Id" class="btn btn-primary">Edit</a></td>
                     </tr>
                 }
 
@@ -43,7 +38,7 @@
 </div>
 
 
-@section Scripts{
+@section Scripts {
     <script>
         $(document).ready(function () {
             $('#table').DataTable();
