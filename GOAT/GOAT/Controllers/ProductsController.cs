@@ -2,6 +2,9 @@
 using DTOs.Objects;
 using BLL.Managers;
 using GOAT.Data;
+using BLL.Utilities;
+using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace GOAT.Controllers
 {
     public class ProductsController : Controller
@@ -41,6 +44,7 @@ namespace GOAT.Controllers
             }
 
             product.ImagePath = fileName;
+            product.IsExist = true;
             ProductManager.Add(product);
             return NoContent();
         }
@@ -51,14 +55,27 @@ namespace GOAT.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Edit()
         {
             return View();
         }
 
-        public IActionResult Search(string input)
+        [HttpPost]
+        public IActionResult Edit(Product product)
         {
+            ProductManager.Update(product);
             return View();
         }
+
+
+        public IActionResult Search(int id)
+        {
+            Product product = ProductManager.GetByID(id);
+            string jsonData = JsonSerializer.Serialize(product);
+            return Content(jsonData, "application/json");
+        }
+
+      
     }
 }

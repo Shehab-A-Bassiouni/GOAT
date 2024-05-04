@@ -9,5 +9,6 @@
   ],
   "ConnectionStrings": {
     "GoatDBConnection": "Data Source=.;Initial Catalog=GOAT;Integrated Security=True;Encrypt=False;TrustServerCertificate = True"
-  }
+  },
+  "DataPath": "F:\\GOAT\\GOAT\\data.txt"
 }

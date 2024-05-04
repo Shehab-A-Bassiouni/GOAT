@@ -1,4 +1,5 @@
 ﻿using DTOs;
+using DTOs.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,11 +38,17 @@ namespace DAL.Repository
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            goatContext.Update(entity);
+            Save();
         }
 
         public void Save() {
             goatContext.SaveChanges();
+        }
+
+        public T GetByID(int id) {
+            var prod = goatContext.Set<T>().Find(id);
+           return prod ;
         }
 
        

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DTOs.Mappers;
 using DTOs.Objects;
 using DAL.Repository;
+using BLL.Utilities;
 namespace BLL.Managers
 {
     public static class ProductManager
@@ -13,13 +14,27 @@ namespace BLL.Managers
         public static void Add(Product product) {
             IRepository<Product> repository = new Repository<Product>();
             repository.Add(product);
+            WriteToProductsList(product);
         }
 
         public static List<Product> GetAll() {
             IRepository<Product> repository = new Repository<Product>();
-           return repository.GetAll();
+            return repository.GetAll();
         }
 
-        
+        public static void WriteToProductsList(Product product) { 
+            ProductsListLoader.AddToProductList(product);
+        }
+
+        public static Product GetByID(int id) { 
+            IRepository<Product> repository = new Repository<Product>();
+             return repository.GetByID(id);
+        }
+
+        public static void Update(Product product) { 
+            IRepository<Product> repository = new Repository<Product>();
+            repository.Update(product);
+        }
+
     }
 }

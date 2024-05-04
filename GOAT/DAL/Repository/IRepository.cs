@@ -14,5 +14,7 @@ namespace DAL.Repository
         public void Delete(T entity);
         public T Get(T entity);
         public List<T> GetAll();
+        public T GetByID(int id);
+        
     }
 }

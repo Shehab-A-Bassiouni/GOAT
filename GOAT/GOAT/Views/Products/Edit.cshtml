@@ -1,47 +1,85 @@
-﻿@Model List<DTOs.Objects.Product>
+﻿@model string
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="input-group mb-3 w-75 mx-auto">
+    <input id="searchInput" type="text" class="form-control" placeholder="Product ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <input type="button" class="btn btn-primary" id="basic-addon2" value="Search" onclick="SearchProduct()" />
+    </div>
+</div>
 
-<div class="px-5">
-    <table class="table table-striped custom-table-data display" id="table">
-        <thead>
-            <tr>
-                <th scope="col" class="align-middle text-center">ID</th>
-                <th scope="col" class="align-middle text-center">Image</th>
-                <th scope="col" class="align-middle text-center">Name</th>
-                <th scope="col" class="align-middle text-center">Description</th>
-                <th scope="col" class="align-middle text-center">Edit</th>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                foreach (DTOs.Objects.Product product in Model)
-                {
-                    <tr>
-                        <th scope="row" class="align-middle text-center">@product.Id</th>
-                        <td class="align-middle text-center"><img src="~/Data/Products/@product.ImagePath" class="img-fluid rounded product-image" /></td>
-                        <td class="align-middle text-center">@product.Name</td>
-                        <td class="align-middle text-center">@product.Price</td>
-                        <td class="align-middle text-center">@product.Stock</td>
-                        <td class="align-middle text-center"><a asp-action="EditByID" asp-controller="Products" asp-route-id="@product.Id" class="btn btn-primary">Edit</a></td>
-                    </tr>
-                }
+<div class="container d-none"  id="main">
 
-            }
+    <div class="text-center mt-5">
+        <img src="~/img/dummyProductImg.jpg" class="col-2 rounded" id="prodImg" />
+    </div>
+    <form class="" asp-action="Edit" asp-controller="Products" method="post">
 
-        </tbody>
-    </table>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Product ID</label>
+            <input name="Id" type="text" class="form-control" id="prodID" aria-describedby="emailHelp" readonly>
+        </div>
 
+        <div class="form-group">
+            <label for="exampleInputEmail1">Product Name</label>
+            <input name="Name" type="text" class="form-control" id="prodName" aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Describtion</label>
+            <textarea name="Description" class="form-control" id="prodDes" aria-describedby="emailHelp"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Price</label>
+            <input name="Price" type="text" class="form-control" id="prodPrice" aria-describedby="emailHelp"></input>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Stock</label>
+            <input name="Stock" type="number" class="form-control" id="prodStock" aria-describedby="emailHelp"></input>
+        </div>
+        <input type="text" hidden id="prodImgPath" name="ImagePath"  value=""/>
+        <input type="text" hidden name="IsExist" value="true" />
+
+        <button type="submit" class="btn btn-danger">Edit Product</button>
+    </form>
 
 </div>
 
-
-@section Scripts {
+@section Scripts{
     <script>
-        $(document).ready(function () {
-            $('#table').DataTable();
-        });
+        function SearchProduct() {
+            var input = $("#searchInput").val();
+            var url = "https://localhost:44308/Products/Search/" + input;
+
+            $.get(url, function (response) {
+                if (response !== null) {
+                    try {
+                        console.log(response)
+                        var parsedData = response;
+                        var imagePath = "/Data/Products/" + parsedData.ImagePath;
+                        $("#prodID").val(parsedData.Id);
+                        $("#prodName").val(parsedData.Name);
+                        $("#prodDes").val(parsedData.Description);
+                        $("#prodPrice").val(parsedData.Price);
+                        $("#prodStock").val(parsedData.Stock);
+                        $("#prodImg").attr("src", imagePath);
+                        $("#prodImgPath").attr("value", parsedData.ImagePath)
+                        $("#main").removeClass("d-none");
+                    } catch (error) {
+                        console.error('Error parsing JSON:', error);
+                    }
+                }
+            });
+        }
+
+
     </script>
 }
+
+
+
+ 
