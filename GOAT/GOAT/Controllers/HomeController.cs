@@ -1,4 +1,3 @@
-using BLL.Utilities;
 using GOAT.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -9,7 +8,6 @@ namespace GOAT.Controllers
     {
         public IActionResult Index()
         {
-            ProductsListLoader.LoadAllProductsToList();
             return View();
         }
 

@@ -11,8 +11,7 @@ namespace DAL.Repository
     {
         public void Add(T entity);
         public void Update(T entity);
-        public void Delete(T entity);
-        public T Get(T entity);
+        public void DeleteByID(int id);
         public List<T> GetAll();
         public T GetByID(int id);
         

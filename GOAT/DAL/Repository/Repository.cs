@@ -17,22 +17,27 @@ namespace DAL.Repository
             Save();
         }
 
-        public void Delete(T entity)
+        public void DeleteByID(int id)
         {
-            throw new NotImplementedException();
-
-        }
-
-        public T Get(T entity)
-        {
-            throw new NotImplementedException();
-
+            var data = goatContext.Set<T>().Find(id);
+            if (data is not null) {
+                data.IsExist = false;
+                Save();
+            } 
         }
 
         public List<T> GetAll()
         {
-            var data = goatContext.Set<T>();
-            if(data is not null) return data.ToList();
+            List<T> products;
+            var set = goatContext.Set<T>();
+            if (set is not null) { 
+                products= set.ToList();
+                foreach (var item in products.ToList())
+                {
+                    if(item.IsExist == false) products.Remove(item);
+                }
+                return products;
+            }
             return new List<T>();
         }
 

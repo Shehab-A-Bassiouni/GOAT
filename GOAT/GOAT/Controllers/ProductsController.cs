@@ -2,7 +2,6 @@
 using DTOs.Objects;
 using BLL.Managers;
 using GOAT.Data;
-using BLL.Utilities;
 using System.Text.Json;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace GOAT.Controllers
@@ -53,6 +52,13 @@ namespace GOAT.Controllers
         public IActionResult Delete()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            ProductManager.Delete(id);
+            return NoContent();
         }
 
         [HttpGet]
