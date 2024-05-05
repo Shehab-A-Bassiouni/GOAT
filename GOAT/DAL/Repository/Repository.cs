@@ -52,8 +52,8 @@ namespace DAL.Repository
         }
 
         public T GetByID(int id) {
-            var prod = goatContext.Set<T>().Find(id);
-           return prod ;
+            var data = goatContext.Set<T>().Find(id);
+           return data ;
         }
 
        

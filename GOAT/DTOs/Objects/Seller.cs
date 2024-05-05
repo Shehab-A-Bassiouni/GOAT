@@ -9,6 +9,8 @@ namespace DTOs.Objects
     public class Seller:BaseEntity
     {
         public required string Name { get; set; }
+        public required string UserName { get; set; }
+        public required string Password { get; set; }
         public required int Role { get; set; }
     }
 }

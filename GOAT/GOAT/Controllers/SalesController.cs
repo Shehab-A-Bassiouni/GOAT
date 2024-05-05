@@ -8,5 +8,10 @@ namespace GOAT.Controllers
         {
             return View();
         }
+
+        public IActionResult Display()
+        {
+            return View();
+        }
     }
 }
