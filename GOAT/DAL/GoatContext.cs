@@ -33,9 +33,15 @@ namespace DAL
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Product>();
+            modelBuilder.Entity<Sale>();
+            modelBuilder.Entity<Customer>();
+            modelBuilder.Entity<Seller>();
         }
 
         public DbSet<Product> Products;
+        public DbSet<Sale> Sales;
+        public DbSet<Customer> Customers;
+        public DbSet<Seller> Sellers;
 
     }
 }

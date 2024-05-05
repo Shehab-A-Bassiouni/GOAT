@@ -10,20 +10,24 @@ namespace DTOs.Objects
     public class Sale :BaseEntity
     {
         [ForeignKey("Product")]
-        public int ProductId { get; set; }
-        public Product Product { get; set; }
-        public double Discount { get; set; }
+        public required int ProductId { get; set; }
+        public required Product Product { get; set; }
 
         [ForeignKey("Seller")]
-        public string SellerId { get; set; }
-        public Seller Seller { get; set; }
+        public required int SellerId { get; set; }
+        public required Seller Seller { get; set; }
 
-        public DateTime Date { get; set; }
 
         [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public required int CustomerId { get; set; }
+        public required Customer Customer { get; set; }
 
+        public double? Discount { get; set; }
+        public string? DiscountReason { get; set; }
+        public required DateTime Date { get; set; }
+
+        public string? Note { get; set; }
+        public double? RemainingPayment { get; set; }
 
     }
 }
