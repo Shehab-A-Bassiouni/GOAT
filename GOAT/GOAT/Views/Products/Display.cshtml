@@ -13,6 +13,8 @@
                 <th scope="col" class="align-middle text-center">ID</th>
                 <th scope="col" class="align-middle text-center">Image</th>
                 <th scope="col" class="align-middle text-center">Name</th>
+                <th scope="col" class="align-middle text-center">Size</th>
+                <th scope="col" class="align-middle text-center">Color</th>
                 <th scope="col" class="align-middle text-center">Price</th>
                 <th scope="col" class="align-middle text-center">Stock</th>
                 <th scope="col" class="align-middle text-center">Description</th>
@@ -26,12 +28,13 @@
                         <th scope="row" class="align-middle text-center">@product.Id</th>
                         <td class="align-middle text-center"><img src="~/Data/Products/@product.ImagePath" class="img-fluid rounded product-image" /></td>
                         <td class="align-middle text-center">@product.Name</td>
+                        <td class="align-middle text-center">@product.Size</td>
+                        <td class="align-middle text-center">@product.Colors</td>
                         <td class="align-middle text-center">@product.Price</td>
                         <td class="align-middle text-center">@product.Stock</td>
                         <td class="align-middle text-center">@product.Description</td>
                     </tr>
                 }
-
             }
 
         </tbody>

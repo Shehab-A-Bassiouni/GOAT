@@ -22,12 +22,12 @@ namespace DTOs.Objects
         public required int CustomerId { get; set; }
         public required Customer Customer { get; set; }
 
-        public double? Discount { get; set; }
+        public int? Discount { get; set; }
         public string? DiscountReason { get; set; }
         public required DateTime Date { get; set; }
 
         public string? Note { get; set; }
-        public double? RemainingPayment { get; set; }
+        public int? RemainingPayment { get; set; }
 
     }
 }

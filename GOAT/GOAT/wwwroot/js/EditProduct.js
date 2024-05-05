@@ -13,6 +13,8 @@
                 $("#prodDes").val(parsedData.Description);
                 $("#prodPrice").val(parsedData.Price);
                 $("#prodStock").val(parsedData.Stock);
+                $("#prodSize").val(parsedData.Size);
+                $("#prodColors").val(parsedData.Colors);
                 $("#prodImg").attr("src", imagePath);
                 $("#prodImgPath").attr("value", parsedData.ImagePath)
                 $("#main").removeClass("d-none");

@@ -12,6 +12,8 @@
                 $("#prodName").val(parsedData.Name);
                 $("#prodDes").val(parsedData.Description);
                 $("#prodPrice").val(parsedData.Price);
+                $("#prodSize").val(parsedData.Size);
+                $("#prodColors").val(parsedData.Colors);
                 $("#prodStock").val(parsedData.Stock);
                 $("#prodImg").attr("src", imagePath);
                 $("#prodImgPath").attr("value", parsedData.ImagePath)
