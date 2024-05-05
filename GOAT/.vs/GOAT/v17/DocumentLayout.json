@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GOAT\\GOAT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|f:\\goat\\goat\\dtos\\objects\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\objects\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|f:\\goat\\goat\\dtos\\objects\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\objects\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|f:\\goat\\goat\\dtos\\objects\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\objects\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|f:\\goat\\goat\\dtos\\objects\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D85C2370-7420-4EC1-9D99-D659CD529463}|DTOs\\DTOs.csproj|solutionrelative:dtos\\objects\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Product.cs",
+              "RelativeDocumentMoniker": "DTOs\\Objects\\Product.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Product.cs",
+              "RelativeToolTip": "DTOs\\Objects\\Product.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:35:12.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Customer.cs",
+              "RelativeDocumentMoniker": "DTOs\\Objects\\Customer.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Customer.cs",
+              "RelativeToolTip": "DTOs\\Objects\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:32:31.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seller.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Seller.cs",
+              "RelativeDocumentMoniker": "DTOs\\Objects\\Seller.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Seller.cs",
+              "RelativeToolTip": "DTOs\\Objects\\Seller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:30:05.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Sale.cs",
+              "RelativeDocumentMoniker": "DTOs\\Objects\\Sale.cs",
+              "ToolTip": "F:\\GOAT\\GOAT\\DTOs\\Objects\\Sale.cs",
+              "RelativeToolTip": "DTOs\\Objects\\Sale.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:21:47.266Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

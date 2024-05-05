@@ -17,5 +17,8 @@ namespace DTOs.Objects
         public required int Stock { get; set; }
 
         public required double Price { get; set; }
+        public required string Size { get; set; }
+        public required string Colors { get; set; }
+
     }
 }
