@@ -7,6 +7,7 @@ using DTOs.Objects;
 using DAL.Repository;
 using DAL.CustomRepositories;
 using DTOs;
+using BLL.Utilities;
 namespace BLL.Managers
 {
     public static class ProductManager
@@ -14,9 +15,10 @@ namespace BLL.Managers
         public static SaveState Add(Product product)
         {
             ProductRepo ProductRepo = new();
+            product.Serial = SerialsMaker.SingleProductSerial();
            return ProductRepo.Add(product);
         }
-
+        
         public static List<Product> GetAll() {
             ProductRepo ProductRepo = new();
             return ProductRepo.GetAll();
