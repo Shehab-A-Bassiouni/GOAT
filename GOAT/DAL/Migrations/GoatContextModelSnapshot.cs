@@ -22,7 +22,7 @@ namespace DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DTOs.Objects.Customer", b =>
+            modelBuilder.Entity("DTOs.Objects.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,8 +30,28 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("IsExist")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Category");
+                });
+
+            modelBuilder.Entity("DTOs.Objects.Customer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<bool?>("IsExist")
                         .HasColumnType("bit");
@@ -42,7 +62,7 @@ namespace DAL.Migrations
                     b.Property<string>("Note")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Phones")
+                    b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -58,8 +78,10 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Colors")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
@@ -79,6 +101,13 @@ namespace DAL.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
+                    b.Property<int?>("RelatedProductsID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Serial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Size")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -88,7 +117,31 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("RelatedProductsID");
+
                     b.ToTable("Product");
+                });
+
+            modelBuilder.Entity("DTOs.Objects.RelatedProducts", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool?>("IsExist")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RelatedProducts");
                 });
 
             modelBuilder.Entity("DTOs.Objects.Sale", b =>
@@ -168,6 +221,23 @@ namespace DAL.Migrations
                     b.ToTable("Seller");
                 });
 
+            modelBuilder.Entity("DTOs.Objects.Product", b =>
+                {
+                    b.HasOne("DTOs.Objects.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DTOs.Objects.RelatedProducts", "RelatedProducts")
+                        .WithMany("Products")
+                        .HasForeignKey("RelatedProductsID");
+
+                    b.Navigation("Category");
+
+                    b.Navigation("RelatedProducts");
+                });
+
             modelBuilder.Entity("DTOs.Objects.Sale", b =>
                 {
                     b.HasOne("DTOs.Objects.Customer", "Customer")
@@ -195,9 +265,19 @@ namespace DAL.Migrations
                     b.Navigation("Seller");
                 });
 
+            modelBuilder.Entity("DTOs.Objects.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("DTOs.Objects.Customer", b =>
                 {
                     b.Navigation("Sales");
+                });
+
+            modelBuilder.Entity("DTOs.Objects.RelatedProducts", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

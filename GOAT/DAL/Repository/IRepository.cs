@@ -9,9 +9,9 @@ namespace DAL.Repository
 {
     public interface IRepository<T> where T: BaseEntity
     {
-        public void Add(T entity);
-        public void Update(T entity);
-        public void DeleteByID(int id);
+        public SaveState Add(T entity);
+        public SaveState Update(T entity);
+        public SaveState DeleteByID(int id);
         public List<T> GetAll();
         public T GetByID(int id);
         

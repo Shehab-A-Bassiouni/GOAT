@@ -5,36 +5,37 @@ using System.Text;
 using System.Threading.Tasks;
 using DTOs.Objects;
 using DAL.Repository;
+using DAL.CustomRepositories;
+using DTOs;
 namespace BLL.Managers
 {
     public static class ProductManager
     {
-        public static void Add(Product product) {
-            IRepository<Product> repository = new Repository<Product>();
-            repository.Add(product);
+        public static SaveState Add(Product product)
+        {
+            ProductRepo ProductRepo = new();
+           return ProductRepo.Add(product);
         }
 
         public static List<Product> GetAll() {
-            IRepository<Product> repository = new Repository<Product>();
-            return repository.GetAll();
+            ProductRepo ProductRepo = new();
+            return ProductRepo.GetAll();
         }
 
-      
-
-        public static Product GetByID(int id) { 
-            IRepository<Product> repository = new Repository<Product>();
-             return repository.GetByID(id);
+        public static Product GetByID(int id) {
+            ProductRepo ProductRepo = new();
+            return ProductRepo.GetByID(id);
         }
 
-        public static void Update(Product product) { 
-            IRepository<Product> repository = new Repository<Product>();
-            repository.Update(product);
+        public static SaveState Update(Product product) {
+            ProductRepo ProductRepo = new();
+           return ProductRepo.Update(product);
         }
 
-        public static void Delete(int id)
+        public static SaveState Delete(int id)
         {
-            IRepository<Product> repository = new Repository<Product>();
-            repository.DeleteByID(id);
+            ProductRepo ProductRepo = new();
+           return ProductRepo.DeleteByID(id);
         }
 
     }

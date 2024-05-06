@@ -9,6 +9,7 @@ namespace DTOs
 {
     public class BaseEntity
     {
+        [Key]
         public int Id { get; set; }
         public bool? IsExist { get; set; }
     }

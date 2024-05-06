@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTOs.Objects
 {
-    public class Seller:BaseEntity
+    public class RelatedProducts : BaseEntity
     {
         public required string Name { get; set; }
-        public required string UserName { get; set; }
-        public required string Password { get; set; }
-        public required Role Role { get; set; }
+        public required List<Product> Products { get; set; }
     }
 }

@@ -11,40 +11,61 @@ namespace DAL.Repository
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly GoatContext goatContext = new();
-        public void Add(T entity)
+        public SaveState Add(T entity)
         {
-            goatContext.Add(entity);
-            Save();
+            try {
+                goatContext.Add(entity);
+                Save();
+                return SaveState.Success;
+            }
+            catch (Exception e) { 
+                Console.Error.WriteLine(e.Message);
+                return SaveState.Failed;
+            }
         }
 
-        public void DeleteByID(int id)
+        public SaveState DeleteByID(int id)
         {
-            var data = goatContext.Set<T>().Find(id);
-            if (data is not null) {
-                data.IsExist = false;
-                Save();
+            try {
+                var data = goatContext.Set<T>().Find(id);
+                if (data is not null)
+                {
+                    data.IsExist = false;
+                    goatContext.Update(data);
+                    Save();
+                    return SaveState.Success;
+                }
+                return SaveState.Failed;
             } 
+            catch (Exception e)
+            {
+                Console.Error.WriteLine(e.Message); 
+                return SaveState.Failed;
+            }
         }
 
         public List<T> GetAll()
         {
-            List<T> products;
             var set = goatContext.Set<T>();
-            if (set is not null) { 
-                products= set.ToList();
-                foreach (var item in products.ToList())
-                {
-                    if(item.IsExist == false) products.Remove(item);
-                }
-                return products;
+            if (set is null) {
+                return null;
             }
-            return new List<T>();
+
+            return set.ToList();
         }
 
-        public void Update(T entity)
+        public SaveState Update(T entity)
         {
-            goatContext.Update(entity);
-            Save();
+            try
+            {
+                goatContext.Update(entity);
+                Save();
+                return SaveState.Success;
+            }
+            catch (Exception e){
+                Console.Error.WriteLine(e.Message);
+                return SaveState.Failed;
+            }
         }
 
         public void Save() {
@@ -52,8 +73,7 @@ namespace DAL.Repository
         }
 
         public T GetByID(int id) {
-            var data = goatContext.Set<T>().Find(id);
-           return data ;
+            return goatContext.Set<T>().Find(id);
         }
 
        
