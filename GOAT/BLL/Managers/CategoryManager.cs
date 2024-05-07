@@ -14,33 +14,34 @@ namespace BLL.Managers
     public class CategoryManager
     {
 
-        private static CategoryRepo categoryRepo= new CategoryRepo();
-
         public static SaveState Add(Category category)
         {
+            CategoryRepo categoryRepo = new CategoryRepo();
             return categoryRepo.Add(category);
         }
 
         public static List<Category> GetAll()
         {
+            CategoryRepo categoryRepo = new CategoryRepo();
             return categoryRepo.GetAll();
         }
 
         public static Category GetByID(int id)
         {
+            CategoryRepo categoryRepo = new CategoryRepo();
             return categoryRepo.GetByID(id);
         }
 
         public static SaveState Edit(Category category)
         {
-            CategoryRepo categoryRepoedit = new CategoryRepo();
-            return categoryRepoedit.Update(category);
+            CategoryRepo categoryRepo = new CategoryRepo();
+            return categoryRepo.Update(category);
         }
 
         public static SaveState Delete(int id)
         {
-            CategoryRepo categoryRepodelete = new CategoryRepo();
-            return categoryRepodelete.DeleteByID(id);
+            CategoryRepo categoryRepo = new CategoryRepo();
+            return categoryRepo.DeleteByID(id);
         }
     }
 }

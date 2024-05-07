@@ -37,11 +37,9 @@ namespace DAL
             modelBuilder.Entity<Customer>();
             modelBuilder.Entity<Seller>();
             modelBuilder.Entity<Category>();
-            modelBuilder.Entity<RelatedProducts>();
         }
 
         public DbSet<Product> Products;
-        public DbSet<RelatedProducts> AllRelatedProducts;
         public DbSet<Category> Categories;
         public DbSet<Sale> Sales;
         public DbSet<Customer> Customers;

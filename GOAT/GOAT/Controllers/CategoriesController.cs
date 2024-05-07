@@ -23,7 +23,7 @@ namespace GOAT.Controllers
         public IActionResult Add(Category category)
         {
             CategoryManager.Add(category);
-            return View();
+            return NoContent();
         }
         [HttpGet]
         public IActionResult Delete(int id)

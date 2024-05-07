@@ -1,4 +1,5 @@
 ﻿using DAL.Repository;
+using DTOs;
 using DTOs.Objects;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace DAL.CustomRepositories
 {
     public class ProductRepo:Repository<Product>
     {
-        
+       
     }
 }

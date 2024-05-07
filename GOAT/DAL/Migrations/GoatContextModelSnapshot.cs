@@ -101,9 +101,6 @@ namespace DAL.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("RelatedProductsID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Serial")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -119,29 +116,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("CategoryID");
 
-                    b.HasIndex("RelatedProductsID");
-
                     b.ToTable("Product");
-                });
-
-            modelBuilder.Entity("DTOs.Objects.RelatedProducts", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool?>("IsExist")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("RelatedProducts");
                 });
 
             modelBuilder.Entity("DTOs.Objects.Sale", b =>
@@ -229,13 +204,7 @@ namespace DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DTOs.Objects.RelatedProducts", "RelatedProducts")
-                        .WithMany("Products")
-                        .HasForeignKey("RelatedProductsID");
-
                     b.Navigation("Category");
-
-                    b.Navigation("RelatedProducts");
                 });
 
             modelBuilder.Entity("DTOs.Objects.Sale", b =>
@@ -273,11 +242,6 @@ namespace DAL.Migrations
             modelBuilder.Entity("DTOs.Objects.Customer", b =>
                 {
                     b.Navigation("Sales");
-                });
-
-            modelBuilder.Entity("DTOs.Objects.RelatedProducts", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

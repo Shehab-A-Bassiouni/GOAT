@@ -11,6 +11,6 @@ namespace DTOs.Objects
         public string? Name { get; set; }
         public string? Phone { get; set; }
         public string? Note { get; set; }
-        public List<Sale>? Sales { get; set; }
+        public virtual List<Sale>? Sales { get; set; }
     }
 }

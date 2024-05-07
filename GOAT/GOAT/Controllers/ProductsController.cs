@@ -22,6 +22,7 @@ namespace GOAT.Controllers
         public IActionResult Add()
         {
             ImageFileVM imageFileVM = new();
+            ViewData["Categories"] = CategoryManager.GetAll();
             return View(imageFileVM);
         }
 
@@ -44,6 +45,7 @@ namespace GOAT.Controllers
 
             product.ImagePath = fileName;
             product.IsExist = true;
+          
             ProductManager.Add(product);
             return NoContent();
         }

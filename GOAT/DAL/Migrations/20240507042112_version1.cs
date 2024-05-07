@@ -43,20 +43,6 @@ namespace DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "RelatedProducts",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsExist = table.Column<bool>(type: "bit", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_RelatedProducts", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Seller",
                 columns: table => new
                 {
@@ -88,7 +74,6 @@ namespace DAL.Migrations
                     Price = table.Column<int>(type: "int", nullable: false),
                     Size = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Colors = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RelatedProductsID = table.Column<int>(type: "int", nullable: true),
                     IsExist = table.Column<bool>(type: "bit", nullable: true)
                 },
                 constraints: table =>
@@ -100,11 +85,6 @@ namespace DAL.Migrations
                         principalTable: "Category",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Product_RelatedProducts_RelatedProductsID",
-                        column: x => x.RelatedProductsID,
-                        principalTable: "RelatedProducts",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -152,11 +132,6 @@ namespace DAL.Migrations
                 column: "CategoryID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Product_RelatedProductsID",
-                table: "Product",
-                column: "RelatedProductsID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Sale_CustomerId",
                 table: "Sale",
                 column: "CustomerId");
@@ -189,9 +164,6 @@ namespace DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "Category");
-
-            migrationBuilder.DropTable(
-                name: "RelatedProducts");
         }
     }
 }

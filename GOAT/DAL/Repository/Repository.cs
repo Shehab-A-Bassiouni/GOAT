@@ -11,12 +11,13 @@ namespace DAL.Repository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly GoatContext goatContext = new();
+      
         public SaveState Add(T entity)
         {
+            GoatContext goatContext = new();
             try {
                 goatContext.Add(entity);
-                Save();
+                Save(goatContext);
                 return SaveState.Success;
             }
             catch (Exception e) { 
@@ -27,13 +28,14 @@ namespace DAL.Repository
 
         public SaveState DeleteByID(int id)
         {
+            GoatContext goatContext = new();
             try {
                 var data = goatContext.Set<T>().Find(id);
                 if (data is not null)
                 {
                     data.IsExist = false;
                     goatContext.Update(data);
-                    Save();
+                    Save(goatContext);
                     return SaveState.Success;
                 }
                 return SaveState.Failed;
@@ -47,7 +49,8 @@ namespace DAL.Repository
 
         public List<T> GetAll()
         {
-            var set = goatContext.Set<T>().AsNoTracking();
+            GoatContext goatContext = new();
+            var set = goatContext.Set<T>();
             if (set is null) {
                 return null;
             }
@@ -57,10 +60,11 @@ namespace DAL.Repository
 
         public SaveState Update(T entity)
         {
+            GoatContext goatContext = new();
             try
             {
                     goatContext.Update(entity);
-                    Save();
+                    Save(goatContext);
                     return SaveState.Success;
                 
             }
@@ -71,11 +75,12 @@ namespace DAL.Repository
             }
         }
 
-        public void Save() {
+        public void Save(GoatContext goatContext) {
             goatContext.SaveChanges();
         }
 
         public T GetByID(int id) {
+            GoatContext goatContext = new();
             return goatContext.Set<T>().Find(id);
         }
 

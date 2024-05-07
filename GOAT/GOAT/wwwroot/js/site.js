@@ -4,3 +4,7 @@
         document.getElementById("preloader").style.display = "none";
     }
 };
+
+function ShowToast() {
+    $("#liveToast").toast('show');
+}

@@ -12,14 +12,12 @@
             <tr>
                 <th scope="col" class="align-middle text-center">Serial</th>
                 <th scope="col" class="align-middle text-center">Image</th>
-                <th scope="col" class="align-middle text-center">Category</th>
                 <th scope="col" class="align-middle text-center">Name</th>
                 <th scope="col" class="align-middle text-center">Size</th>
-                <th scope="col" class="align-middle text-center">Color</th>
                 <th scope="col" class="align-middle text-center">Price</th>
-                <th scope="col" class="align-middle text-center">Stock</th>
-                <th scope="col" class="align-middle text-center">Description</th>
-                <th scope="col" class="align-middle text-center">Related</th>
+                <th scope="col" class="align-middle text-center">View</th>
+                <th scope="col" class="align-middle text-center">Edit</th>
+                <th scope="col" class="align-middle text-center">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -27,16 +25,14 @@
                 foreach (DTOs.Objects.Product product in Model)
                 {
                     <tr>
-                        <th scope="row" class="align-middle text-center">@product.Serial</th>
+                        <th  class="align-middle text-center">@product.Serial</th>
                         <td class="align-middle text-center"><img src="~/Data/Products/@product.ImagePath" class="img-fluid rounded product-image" /></td>
-                        <td class="align-middle text-center">@product.Category</td>
                         <td class="align-middle text-center">@product.Name</td>
                         <td class="align-middle text-center">@product.Size</td>
-                        <td class="align-middle text-center">@product.Colors</td>
                         <td class="align-middle text-center">@product.Price</td>
-                        <td class="align-middle text-center">@product.Stock</td>
-                        <td class="align-middle text-center">@product.Description</td>
-                        <td class="align-middle text-center"><a class="btn btn-primary">Related</a></td>
+                        <td class="align-middle text-center"><a class="btn btn-secondary px-3">View</a></td>
+                        <td class="align-middle text-center"><a class="btn btn-primary px-4">Edit</a></td>
+                        <td class="align-middle text-center"><a class="btn btn-danger">Delete</a></td>
                     </tr>
                 }
             }

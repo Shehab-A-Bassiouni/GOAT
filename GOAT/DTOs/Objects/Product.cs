@@ -10,20 +10,39 @@ namespace DTOs.Objects
 {
     public class Product : BaseEntity
     {
-        public required string Serial { get; set; }  //
-        public required string Name { get; set; } //
-        public string? Description { get; set; } //
-        [ForeignKey("Category")]
-        public required int CategoryID { get; set; }  //
-        public required Category Category { get; set; }  //
-        public required string ImagePath { get; set; }  //
-        public required int Stock { get; set; }  //
-        public required int Price { get; set; }  //
-        public required string Size { get; set; }  //
-        public string? Colors { get; set; }  //
-        [ForeignKey("RelatedProducts")]
-        public  int? RelatedProductsID { get; set; }
-        public  RelatedProducts? RelatedProducts { get; set; }
+        [Required]
+        public string Serial { get; set; }
 
+
+        [Required]
+        public required string Name { get; set; } 
+
+        public string? Description { get; set; } 
+
+
+        [ForeignKey("Category")]
+        [Required]
+        public  int CategoryID { get; set; }
+
+        [Required]
+        public virtual Category Category { get; set; }  
+
+
+        [Required]
+        public  string ImagePath { get; set; } 
+        
+
+        [Required]
+        public int Stock { get; set; }  
+
+
+        [Required]
+        public int Price { get; set; }  
+
+
+        [Required]
+        public  string Size { get; set; }  
+
+        public string? Colors { get; set; }  
     }
 }

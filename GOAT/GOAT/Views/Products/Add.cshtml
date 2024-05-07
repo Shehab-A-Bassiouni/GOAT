@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Add";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<DTOs.Objects.Category> Categories = (ViewData["Categories"] as List<DTOs.Objects.Category>)!;
 }
 
 <div class="position-fixed bottom-0 right-0 p-5" style="z-index: 99999; right: 0; bottom: 0;">
@@ -29,7 +30,14 @@
 
         <div class="form-group">
             <label>Category</label>
-            <select name="Category"></select>
+            <select name="CategoryID" title="Categories" class="custom-select">
+                <option  disabled selected>Select Category</option>
+                @foreach (DTOs.Objects.Category category in Categories ?? new List<DTOs.Objects.Category>())
+                {
+                    <option value="@category.Id">@category.Name</option>
+                
+                }
+            </select>
         </div>
 
         <div class="form-group">
