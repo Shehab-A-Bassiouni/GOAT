@@ -11,10 +11,10 @@ namespace DAL.Repository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-      
+            
+      private readonly GoatContext goatContext = new();
         public SaveState Add(T entity)
         {
-            GoatContext goatContext = new();
             try {
                 goatContext.Add(entity);
                 Save(goatContext);
@@ -28,7 +28,6 @@ namespace DAL.Repository
 
         public SaveState DeleteByID(int id)
         {
-            GoatContext goatContext = new();
             try {
                 var data = goatContext.Set<T>().Find(id);
                 if (data is not null)
@@ -49,7 +48,6 @@ namespace DAL.Repository
 
         public List<T> GetAll()
         {
-            GoatContext goatContext = new();
             var set = goatContext.Set<T>();
             if (set is null) {
                 return null;
@@ -60,7 +58,6 @@ namespace DAL.Repository
 
         public SaveState Update(T entity)
         {
-            GoatContext goatContext = new();
             try
             {
                     goatContext.Update(entity);
@@ -80,7 +77,7 @@ namespace DAL.Repository
         }
 
         public T GetByID(int id) {
-            GoatContext goatContext = new();
+           
             return goatContext.Set<T>().Find(id);
         }
 
