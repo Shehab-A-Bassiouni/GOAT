@@ -12,7 +12,7 @@ namespace BLL.Managers
 {
     public static class ProductManager
     {
-        private static ProductRepo ProductRepo=new ProductRepo();
+        private readonly static ProductRepo ProductRepo=new ProductRepo();
        
         public static SaveState Add(Product product)
         {
