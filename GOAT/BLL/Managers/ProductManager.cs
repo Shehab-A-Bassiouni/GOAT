@@ -21,12 +21,22 @@ namespace BLL.Managers
            return ProductRepo.Add(product);
         }
         
-        public static List<Product> GetAll() {
+        public static List<Product> GetAllWihInclude() {
+            return ProductRepo.GetAllWithInclude();
+        }
+
+        public static List<Product> GetAll()
+        {
             return ProductRepo.GetAll();
         }
 
         public static Product GetByID(int id) {
             return ProductRepo.GetByID(id);
+        }
+
+        public static Product GetByIdWithInclude(int id)
+        {
+            return ProductRepo.GetByIdWithInclude(id);
         }
 
         public static SaveState Update(Product product) {

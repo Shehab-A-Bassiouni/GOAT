@@ -4,6 +4,7 @@ using BLL.Managers;
 using GOAT.Data;
 using System.Text.Json;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Diagnostics;
 namespace GOAT.Controllers
 {
     public class ProductsController : Controller
@@ -14,7 +15,7 @@ namespace GOAT.Controllers
         }
         public IActionResult Display()
         {
-            List<Product> products = ProductManager.GetAll();
+            List<Product> products = ProductManager.GetAllWihInclude();
             return View(products);
         }
 
@@ -45,26 +46,20 @@ namespace GOAT.Controllers
 
             product.ImagePath = fileName;
             product.IsExist = true;
-          
             ProductManager.Add(product);
             return NoContent();
         }
 
         [HttpGet]
-        public IActionResult Delete()
-        {
-            return View();
-        }
-
-        [HttpPost]
         public IActionResult Delete(int id)
         {
             ProductManager.Delete(id);
-            return NoContent();
+            return RedirectToAction("Display");    
         }
 
+
         [HttpGet]
-        public IActionResult Edit()
+        public IActionResult Edit(int id)
         {
             return View();
         }
@@ -73,7 +68,7 @@ namespace GOAT.Controllers
         public IActionResult Edit(Product product)
         {
             ProductManager.Update(product);
-            return View();
+            return NoContent();
         }
 
 
@@ -84,6 +79,13 @@ namespace GOAT.Controllers
             return Content(jsonData, "application/json");
         }
 
-      
+        [HttpPost]
+        public IActionResult Product(int id)
+        {
+            Product product = ProductManager.GetByIdWithInclude(id);
+            return View();
+        }
+
+
     }
 }
