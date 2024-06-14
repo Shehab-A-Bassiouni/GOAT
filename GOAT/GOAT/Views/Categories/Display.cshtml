@@ -4,33 +4,54 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Display</h1>
-
 <div class="px-5">
     <table class="table table-striped custom-table-data display" id="table">
         <thead>
             <tr>
-                <th scope="col" class="align-middle text-center">Id</th>
+                <th scope="col" class="align-middle text-center">ID</th>
                 <th scope="col" class="align-middle text-center">Name</th>
-                <th scope="col" class="align-middle text-center">Description</th> 
-                <th scope="col" class="align-middle text-center">Edit</th> 
-                <th scope="col" class="align-middle text-center">Delete</th> 
+                <th scope="col" class="align-middle text-center">Description</th>
+                <th scope="col" class="align-middle text-center">Products</th>
+                <th scope="col" class="align-middle text-center">Edit</th>
+                <th scope="col" class="align-middle text-center">Delete</th>
             </tr>
         </thead>
         <tbody>
             @{
                 foreach (DTOs.Objects.Category category in Model)
                 {
+                    int productNum = 0;
+                    string catDesc = "No Description";
+
+                    if (category.Description is not null)
+                    {
+                        catDesc = category.Description;
+                    }
+
+                 
+                    if (category.Products?.ToList() is not null)
+                    {
+                        productNum = category.Products.ToList().Count;
+                    }
+
+                    List<string> data = new();
+                    data.Add(category.Id.ToString());
+                    data.Add(category.Name);
+                    data.Add(catDesc);
+                    data.Add(productNum.ToString());
+
+
                     <tr>
-                        <td class="align-middle text-center">@category.Id</td>
+                        <th class="align-middle text-center">@category.Id</th>
                         <th class="align-middle text-center">@category.Name</th>
-                        <td class="align-middle text-center">@category.Description</td>
-                        <td class="align-middle text-center"><a class="btn btn-outline-primary px-4" asp-action="Edit" asp-controller="Categories" asp-route-id="@category.Id">Edit</a></td>
-                        <td class="align-middle text-center"><a class="btn btn-outline-danger " asp-action="Delete" asp-controller="Categories" asp-route-id="@category.Id">Delete</a></td>
+                        <th class="align-middle text-center">@catDesc</th>
+                        <th class="align-middle text-center">@productNum</th>
+                        <td class="align-middle text-center"><a asp-action="Edit" asp-controller="Products" asp-route-id="@category.Id" class="btn btn-outline-primary px-4">Edit</a></td>
+                        <td class="align-middle text-center"><a asp-action="Delete" asp-controller="Products" asp-route-id="@category.Id" class="btn btn-outline-danger">Delete</a></td>
                     </tr>
+
                 }
             }
-           
 
         </tbody>
     </table>
@@ -39,6 +60,8 @@
 </div>
 
 
+
 @section Scripts {
-    <script src="~/js/DisplayProducts.js"></script>
+    <script src="~/js/DisplayCategories.js"></script>
 }
+
